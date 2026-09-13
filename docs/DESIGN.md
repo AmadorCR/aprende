@@ -376,12 +376,14 @@ puede ocupar una posicion relevante en el Hero.
 
 No repetir el eslogan innecesariamente en otras secciones.
 
-La configuracion inicial del contenido del Hero esta centralizada en `src/content/site.ts`. La imagen del Hero continua pendiente y debe resolverse con fotografia real cuando exista material adecuado.
+La configuracion inicial del contenido textual del Hero esta centralizada en `src/content/site.ts`. La zona visual derecha del Hero puede mostrar destacados activos gestionados desde `src/content/highlights.ts`. Si no existen destacados activos, debe utilizarse un fallback visual discreto preparado para una futura fotografia real cuando exista material adecuado.
 
 Cuando se disene visualmente, el criterio previsto es:
 
-- Desktop: composicion aproximada 55/45, texto a un lado, fotografia real al otro, dos CTA y eslogan en posicion secundaria.
-- Mobile: una sola columna con texto, CTA principal, CTA secundario, fotografia y eslogan.
+- Desktop: composicion aproximada 55/45, texto a un lado, destacados activos o fallback visual al otro, dos CTA y eslogan en posicion secundaria.
+- Mobile: una sola columna con texto, CTA principal, CTA secundario, destacados activos o fallback visual y eslogan.
+
+Los destacados del Hero deben ser configurables, tener navegacion manual cuando haya varios, no utilizar autoplay y mostrar como maximo recomendado tres elementos activos. Su visibilidad se controla mediante `enabled`, `startDate`, `endDate` y `order`.
 
 Preferencia fotografica:
 

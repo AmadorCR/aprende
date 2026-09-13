@@ -66,7 +66,10 @@ En definitiva, mi forma de trabajar combina evaluación, individualización, est
       "neuropsicologia",
       "evaluacion-orientacion",
     ],
-    image: null,
+    image: {
+      src: "/images/team/cristina-marin.jpg",
+      alt: "Cristina Marín",
+    },
     enabled: true,
     order: 1,
   },
@@ -98,7 +101,10 @@ En definitiva, mi forma de trabajar combina evaluación, individualización, est
     workAreas: [],
     experienceAreas: [],
     areas: ["terapia-psicologica", "neuropsicologia"],
-    image: null,
+    image: {
+      src: "/images/team/irene-zamora.jpg",
+      alt: "Irene Zamora",
+    },
     enabled: true,
     order: 2,
   },

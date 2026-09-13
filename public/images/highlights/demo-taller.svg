@@ -1,0 +1,14 @@
+<svg width="960" height="600" viewBox="0 0 960 600" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Imagen demo para taller en Aprende</title>
+  <desc id="desc">Placeholder gráfico de desarrollo para un destacado de taller en Aprende.</desc>
+  <rect width="960" height="600" fill="#F8F7F9"/>
+  <path d="M0 480C132 430 230 536 368 486C506 436 604 332 760 390C846 422 906 422 960 398V600H0V480Z" fill="#60C4F9" fill-opacity="0.28"/>
+  <rect x="116" y="104" width="728" height="392" rx="38" fill="white" stroke="#E8E5EC" stroke-width="4"/>
+  <circle cx="248" cy="252" r="74" fill="#BA46B4" fill-opacity="0.22"/>
+  <circle cx="356" cy="252" r="74" fill="#7D75E3" fill-opacity="0.22"/>
+  <circle cx="302" cy="198" r="74" fill="#60C4F9" fill-opacity="0.3"/>
+  <text x="456" y="214" fill="#9D5ACC" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">DEMO</text>
+  <text x="456" y="292" fill="#1B1B1F" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700">Taller</text>
+  <text x="456" y="354" fill="#55545C" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="600">en Aprende</text>
+  <rect x="456" y="392" width="244" height="16" rx="8" fill="#69A1F0" fill-opacity="0.55"/>
+</svg>

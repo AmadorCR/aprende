@@ -20,6 +20,64 @@ export const siteConfig = {
     slogan: "Aprende, recupera y prospera.",
     image: null,
   },
+  homeHelpAreas: {
+    title: "Cómo podemos ayudarte",
+    description:
+      "Trabajamos desde distintas áreas para ofrecer una atención adaptada a cada persona, sus necesidades y su momento.",
+    cta: {
+      label: "Ver todos los servicios",
+      href: "/servicios",
+    },
+  },
+  homeTeam: {
+    eyebrow: "El equipo",
+    title: "Profesionales que trabajan contigo",
+    description:
+      "Un equipo multidisciplinar que combina diferentes áreas de especialización para ofrecer una atención coordinada e individualizada.",
+    profileCTA: {
+      label: "Conocer perfil",
+      href: "/equipo",
+    },
+  },
+  homeCenter: {
+    eyebrow: "El centro",
+    title: "Un espacio pensado para acompañarte",
+    description:
+      "Aprende es un centro multidisciplinar situado en Priego de Córdoba, diseñado para ofrecer un entorno cercano, tranquilo y profesional en el que trabajar de forma individualizada.",
+    images: [
+      {
+        id: "main",
+        src: "/images/center/centro-principal.jpeg",
+        alt: "Espacio principal del centro Aprende",
+        label: "Fotografía principal del centro",
+        featured: true,
+      },
+      {
+        id: "secondary",
+        src: "/images/center/centro-secundaria.jpeg",
+        alt: "Sala del centro Aprende",
+        label: "Fotografía secundaria del centro",
+        featured: false,
+      },
+    ],
+    cta: {
+      label: "Conocer el centro",
+      href: "/centro",
+    },
+  },
+  homeContact: {
+    title: "¿Hablamos?",
+    description:
+      "Si tienes dudas, quieres contarnos tu caso o necesitas orientación sobre qué servicio puede encajar mejor, puedes escribirnos directamente.",
+    primaryCTA: {
+      label: "Hablar por WhatsApp",
+      channel: "whatsapp",
+    },
+    secondaryCTA: {
+      label: "Escribir por email",
+      channel: "email",
+    },
+  },
   phone: "638 21 20 64",
   whatsapp: "+34 638 21 20 64",
   email: "clinicaneuroaprende@gmail.com",

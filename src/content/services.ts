@@ -5,7 +5,8 @@ export const serviceAreas = [
     id: "aprendizaje-educacion",
     slug: "aprendizaje-educacion",
     name: "Aprendizaje y educacion",
-    shortDescription: "",
+    shortDescription:
+      "Apoyo en dificultades de aprendizaje, técnicas de estudio, autonomía y estrategias educativas.",
     enabled: true,
     order: 1,
     services: [
@@ -65,7 +66,8 @@ export const serviceAreas = [
     id: "comunicacion-lenguaje",
     slug: "comunicacion-lenguaje",
     name: "Comunicacion y lenguaje",
-    shortDescription: "",
+    shortDescription:
+      "Intervención en comunicación, lenguaje y necesidades relacionadas con Audición y Lenguaje.",
     enabled: true,
     order: 2,
     services: [
@@ -105,7 +107,8 @@ export const serviceAreas = [
     id: "terapia-psicologica",
     slug: "terapia-psicologica",
     name: "Terapia psicologica",
-    shortDescription: "",
+    shortDescription:
+      "Acompañamiento psicológico en infancia, adolescencia, edad adulta, pareja y familia.",
     enabled: true,
     order: 3,
     services: [
@@ -165,7 +168,8 @@ export const serviceAreas = [
     id: "neuropsicologia",
     slug: "neuropsicologia",
     name: "Neuropsicologia",
-    shortDescription: "",
+    shortDescription:
+      "Intervención orientada a procesos cognitivos, estimulación cognitiva y habilidades sociales.",
     enabled: true,
     order: 4,
     services: [
@@ -195,7 +199,8 @@ export const serviceAreas = [
     id: "evaluacion-orientacion",
     slug: "evaluacion-orientacion",
     name: "Evaluacion y orientacion",
-    shortDescription: "",
+    shortDescription:
+      "Evaluación psicopedagógica, valoración de dificultades y orientación a familias.",
     enabled: true,
     order: 5,
     services: [

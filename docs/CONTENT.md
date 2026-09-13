@@ -79,6 +79,16 @@ Principio de contenido:
 
 > La Home orienta. Las paginas especificas explican.
 
+Orden de secciones:
+
+1. Header
+2. Hero + Destacados
+3. Como podemos ayudarte
+4. Equipo
+5. El centro
+6. Hablamos?
+7. Footer
+
 ### 4.1 Header
 
 Contenido:
@@ -141,7 +151,9 @@ slogan: "Aprende, recupera y prospera."
 image: pendiente
 ```
 
-El CTA principal debe utilizar el WhatsApp centralizado del sitio. La imagen del Hero continua pendiente y no debe sustituirse por fotografia de stock.
+El CTA principal debe utilizar el WhatsApp centralizado del sitio. La zona visual derecha del Hero prioriza destacados activos configurados en `src/content/highlights.ts`; si no hay destacados activos, debe mostrarse un fallback visual discreto preparado para incorporar posteriormente una fotografia real. No debe sustituirse por fotografia de stock.
+
+Los destacados del Hero son contenido local configurable. Deben mostrarse solo cuando `enabled` sea verdadero y sus fechas opcionales de inicio/fin esten vigentes. El maximo visual recomendado es de 3 destacados activos, con navegacion manual y sin autoplay.
 
 Evitar:
 
@@ -157,7 +169,7 @@ Objetivo:
 
 Permitir que una persona identifique rapidamente el area que puede necesitar sin obligarla a conocer terminologia profesional.
 
-Debe mostrar las principales areas de intervencion mediante elementos visuales sencillos.
+Debe mostrar las principales areas de intervencion mediante elementos visuales sencillos. En Home se presenta como una composicion editorial breve, con las areas activas obtenidas desde `src/content/services.ts`, enlaces hacia `/servicios` y sin listar todos los servicios concretos.
 
 La taxonomia principal de servicios esta definida. Las cinco grandes areas son:
 
@@ -234,34 +246,7 @@ No asumir automaticamente que cada servicio sera una pagina independiente.
 
 Las areas, servicios y profesionales se mantienen como contenido configurable y tipado en `src/content/` y `src/types/`. Los componentes posteriores deberan consumir esos datos, respetar `enabled` para ocultar elementos temporalmente y utilizar `order` para ordenar sin hardcodear listados.
 
-### 4.4 Nuestra forma de trabajar
-
-Objetivo:
-
-Explicar brevemente que caracteriza la forma de trabajar de Aprende.
-
-Conceptos a comunicar:
-
-- atencion individualizada
-- profesionalidad
-- respeto por los tiempos de cada persona
-- coordinacion entre profesionales cuando sea necesaria
-- cercania
-- intervencion adaptada a las necesidades reales
-
-No utilizar claims absolutos. No prometer resultados.
-
-El lema de Aprende podria aparecer en esta seccion si finalmente se define.
-
-El lema sera contenido configurable y centralizado. Conceptualmente debe existir una propiedad equivalente a:
-
-```text
-motto: "Lema principal"
-```
-
-No inventar ahora un lema definitivo.
-
-### 4.5 Equipo
+### 4.4 Equipo
 
 Mostrar una presentacion breve del equipo.
 
@@ -293,7 +278,7 @@ Destino:
 
 La arquitectura debe permitir incorporar profesionales adicionales en el futuro.
 
-### 4.6 El centro
+### 4.5 El centro
 
 Presentacion visual breve de las instalaciones.
 
@@ -326,7 +311,7 @@ Destino:
 
 No utilizar fotografias de stock para representar las instalaciones.
 
-### 4.7 CTA final / Contacto
+### 4.6 CTA final / Contacto
 
 La Home debe terminar con una llamada clara a contactar.
 
@@ -342,12 +327,10 @@ Texto definitivo:
 TBD
 ```
 
-Mostrar los canales respetando esta prioridad:
+Mostrar un bloque de CTA muy simple con:
 
 1. WhatsApp: contacto/conversion principal.
 2. Email: contacto secundario.
-3. Instagram: presencia social, confianza y descubrimiento.
-4. TikTok: presencia social y descubrimiento.
 
 #### WhatsApp
 
@@ -357,23 +340,11 @@ Canal principal de contacto.
 
 Canal alternativo.
 
-#### Instagram
-
-Canal para conocer Aprende, actividad del centro y contenido publicado.
-
-#### TikTok
-
-Canal social para presencia y descubrimiento. No es un canal de contacto prioritario.
-
-Cada canal debe incluir:
-
-- icono
-- nombre
-- accion comprensible
+No repetir telefono, direccion ni redes sociales en esta seccion. Esos datos se muestran en el Footer.
 
 No utilizar formulario. No solicitar informacion clinica o sensible.
 
-### 4.8 Footer
+### 4.7 Footer
 
 Debe incluir como minimo:
 
