@@ -78,6 +78,29 @@ export const siteConfig = {
       channel: "email",
     },
   },
+  servicesPage: {
+    hero: {
+      eyebrow: "Servicios",
+      title: "¿Cómo podemos ayudarte?",
+      description:
+        "En Aprende trabajamos desde distintas áreas para ofrecer una atención adaptada a las necesidades de cada persona y cada familia.",
+      secondaryDescription:
+        "Puedes explorar nuestras áreas de trabajo o contactar con nosotros si no tienes claro qué tipo de atención necesitas.",
+    },
+    contact: {
+      title: "¿No sabes qué servicio necesitas?",
+      description:
+        "Cuéntanos brevemente qué necesitas y te orientaremos sobre la opción que puede encajar mejor contigo.",
+      primaryCTA: {
+        label: "Hablar por WhatsApp",
+        channel: "whatsapp",
+      },
+      secondaryCTA: {
+        label: "Escribir por email",
+        channel: "email",
+      },
+    },
+  },
   phone: "638 21 20 64",
   whatsapp: "+34 638 21 20 64",
   email: "clinicaneuroaprende@gmail.com",

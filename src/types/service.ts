@@ -10,6 +10,11 @@ export type Service = {
   slug: string;
   name: string;
   shortDescription: string;
+  detail: {
+    introduction: string;
+    focus: string[];
+    audience: string;
+  };
   enabled: boolean;
   featured: boolean;
   order: number;

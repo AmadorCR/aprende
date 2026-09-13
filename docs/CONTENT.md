@@ -502,10 +502,12 @@ Presentar a las personas que forman Aprende y transmitir profesionalidad y confi
 
 Texto breve sobre el caracter multidisciplinar del centro.
 
-Texto definitivo:
+Texto definido para la pagina:
 
 ```text
-TBD
+En Aprende trabajamos desde distintas areas para ofrecer una atencion individualizada y coordinada, adaptada a las necesidades de cada persona y cada familia.
+
+Cada profesional aporta su formacion y experiencia desde su ambito de intervencion, manteniendo una vision conjunta cuando el caso lo requiere.
 ```
 
 ### 7.2 Profesionales

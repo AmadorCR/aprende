@@ -82,25 +82,31 @@ En definitiva, mi forma de trabajar combina evaluación, individualización, est
     professionalRegistration: "AN-12620",
     // PLACEHOLDER pendiente de validacion por Irene antes de publicarse como texto definitivo.
     shortBio:
-      "Acompana procesos psicologicos y familiares desde su formacion en psicologia sanitaria, terapia familiar y neuropsicologia infantil.",
+      "Desarrolla su trabajo en el área de psicoterapia y acompañamiento psicológico y familiar.",
     // PLACEHOLDER pendiente de validacion por Irene antes de publicarse como texto definitivo.
-    bio: "",
-    // PLACEHOLDER pendiente de validacion por Irene antes de publicarse como texto definitivo.
-    workingApproach:
-      "Trabaja desde un acompanamiento psicologico cercano, profesional y adaptado a cada situacion.",
+    bio:
+      "Irene desarrolla su trabajo en el área de psicoterapia y acompañamiento psicológico y familiar, atendiendo a infancia, adolescencia, personas adultas, parejas y familias desde su ámbito profesional.",
+    // Pendiente de texto definitivo redactado o validado por Irene.
+    workingApproach: "",
     education: [
       "Grado en Psicologia",
       "Experta en Terapia Familiar Sistemica",
       "Experta en Neuropsicologia Infantil",
       "Master en Psicologia General Sanitaria",
-      "Master en Atencion Temprana y TDAH",
+      "Master en Atención Temprana y TDAH",
     ],
     specializations: [
-      "Area de Psicoterapia y Acompanamiento Psicologico y Familiar",
+      "Área de Psicoterapia y Acompañamiento Psicológico y Familiar",
     ],
-    workAreas: [],
+    workAreas: [
+      "Psicoterapia",
+      "Acompañamiento psicológico y familiar",
+      "Infancia y adolescencia",
+      "Personas adultas",
+      "Parejas y familias",
+    ],
     experienceAreas: [],
-    areas: ["terapia-psicologica", "neuropsicologia"],
+    areas: ["terapia-psicologica"],
     image: {
       src: "/images/team/irene-zamora.jpg",
       alt: "Irene Zamora",
