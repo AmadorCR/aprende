@@ -922,3 +922,71 @@ La estrategia debe seguir este orden:
 5. Optimizar segun datos reales despues del lanzamiento.
 
 Nunca invertir ese orden.
+
+## SEO tecnico implementado
+
+Esta primera fase deja preparada una base tecnica segura sin decidir dominio definitivo, migracion, redirecciones, Search Console, analitica ni datos estructurados avanzados.
+
+### Implementado
+
+- Metadata basica global con `title` template, descripcion general, idioma `es`, `applicationName`, Open Graph base y Twitter Card basica.
+- Metadata especifica para `/`, `/servicios`, `/equipo`, `/centro`, `/aviso-legal`, `/privacidad` y `/cookies`.
+- Favicon/icon del sitio apuntando al isotipo disponible en `public/images/branding/aprende-isotipo.jpg`.
+- Control de indexabilidad mediante metadata `robots` y `src/app/robots.ts`.
+- `src/app/sitemap.ts` preparado para generar URLs absolutas cuando exista `NEXT_PUBLIC_SITE_URL`.
+- Pagina 404 sencilla mediante `src/app/not-found.tsx`.
+- Revision ligera de semantica existente: las paginas publicas principales usan `main`, un `h1` principal, `nav`, `footer` y `address` donde corresponde.
+
+### Control de siteUrl
+
+La URL base se controla con:
+
+```bash
+NEXT_PUBLIC_SITE_URL=
+```
+
+Debe configurarse solo cuando exista una URL oficial o un entorno donde se quiera generar sitemap con URLs absolutas. No se fija `localhost`, no se fija `https://www.neuroaprende.net/` y no se define canonical definitivo hasta decidir dominio y migracion.
+
+### Control de indexabilidad
+
+La indexabilidad se controla con:
+
+```bash
+NEXT_PUBLIC_SITE_INDEXABLE=false
+```
+
+Por defecto la web no es indexable. Para la produccion oficial, cuando se decida publicar e indexar, debe configurarse:
+
+```bash
+NEXT_PUBLIC_SITE_INDEXABLE=true
+```
+
+Con valor distinto de `true`, la metadata global marca `noindex,nofollow` y `robots.txt` bloquea el rastreo. Con `true`, se permite indexacion y rastreo de las paginas publicas.
+
+### Sitemap
+
+El sitemap incluye las rutas publicas reales:
+
+```text
+/
+/servicios
+/equipo
+/centro
+/aviso-legal
+/privacidad
+/cookies
+```
+
+Solo se generan entradas cuando la web es indexable y existe `NEXT_PUBLIC_SITE_URL`, porque el sitemap necesita URLs absolutas y el dominio definitivo sigue pendiente.
+
+### Pendiente
+
+- Dominio definitivo.
+- Canonical definitivo.
+- Imagen Open Graph definitiva (`opengraph-image`).
+- Schema/JSON-LD.
+- Analisis de URLs actuales de `neuroaprende.net`.
+- Redirecciones 301.
+- Google Search Console.
+- Analitica, si se decide utilizar.
+- Publicacion e indexacion definitiva.

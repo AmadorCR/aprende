@@ -4,7 +4,8 @@ import { PendingLegalPage } from "@/components/legal/PendingLegalPage";
 import { legalPages } from "@/content/legal";
 
 export const metadata: Metadata = {
-  title: "Politica de privacidad | Aprende Centro Multidisciplinar",
+  title: "Política de privacidad",
+  description: "Información sobre privacidad de Aprende Centro Multidisciplinar.",
 };
 
 export default function PrivacidadPageRoute() {

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { getSiteUrl, isSiteIndexable, siteSeo } from "@/lib/seo";
 
 import "./globals.css";
 
@@ -12,9 +13,42 @@ const inter = Inter({
   weight: ["400", "500", "600", "700"],
 });
 
+const siteUrl = getSiteUrl();
+
 export const metadata: Metadata = {
-  title: "Aprende Centro Multidisciplinar",
-  description: "Proyecto web corporativo.",
+  metadataBase: siteUrl ? new URL(siteUrl) : undefined,
+  title: {
+    default: "Aprende Centro Multidisciplinar | Priego de Córdoba",
+    template: `%s | ${siteSeo.siteName}`,
+  },
+  applicationName: siteSeo.shortName,
+  description: siteSeo.defaultDescription,
+  robots: isSiteIndexable()
+    ? {
+        index: true,
+        follow: true,
+      }
+    : {
+        index: false,
+        follow: false,
+      },
+  icons: {
+    icon: siteSeo.favicon,
+    shortcut: siteSeo.favicon,
+    apple: siteSeo.favicon,
+  },
+  openGraph: {
+    siteName: siteSeo.siteName,
+    title: "Aprende Centro Multidisciplinar | Priego de Córdoba",
+    description: siteSeo.defaultDescription,
+    locale: siteSeo.locale,
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Aprende Centro Multidisciplinar | Priego de Córdoba",
+    description: siteSeo.defaultDescription,
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

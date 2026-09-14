@@ -5,7 +5,7 @@ import { siteConfig } from "@/content/site";
 import { createMailtoHref, createWhatsAppHref } from "@/lib/contact";
 
 export const metadata: Metadata = {
-  title: "El centro | Aprende Centro Multidisciplinar",
+  title: "El centro",
   description:
     "Conoce Aprende Centro Multidisciplinar en Priego de Córdoba, nuestro espacio y cómo contactar con nosotros.",
 };
