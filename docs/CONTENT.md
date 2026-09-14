@@ -574,6 +574,14 @@ Mostrar las instalaciones y explicar que tipo de espacio es Aprende.
 
 Debe apoyarse principalmente en contenido visual real.
 
+Estructura inicial:
+
+1. Hero interior compacto con presentacion breve del centro.
+2. Composicion fotografica con un maximo inicial de dos imagenes reales.
+3. Bloque contextual sobre el entorno de trabajo del centro.
+4. Seccion breve de ubicacion con direccion centralizada.
+5. CTA final hacia WhatsApp y email.
+
 ### 8.1 Contenido potencial
 
 - presentacion breve
@@ -674,9 +682,9 @@ Rutas:
 - `/privacidad`
 - `/cookies`
 
-El contenido juridico definitivo sera proporcionado o validado posteriormente.
+Las paginas legales basicas existen como documentos editables y sobrios, con contenido prudente basado solo en datos confirmados.
 
-No generar textos legales definitivos automaticamente.
+No tratar estos textos como asesoramiento juridico final.
 
 ## 11. Contenido futuro
 

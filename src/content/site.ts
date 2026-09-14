@@ -101,6 +101,42 @@ export const siteConfig = {
       },
     },
   },
+  centerPage: {
+    hero: {
+      eyebrow: "El centro",
+      title: "Un espacio pensado para acompañarte",
+      description:
+        "Aprende es un centro multidisciplinar situado en Priego de Córdoba, diseñado para ofrecer un entorno cercano, tranquilo y profesional en el que trabajar de forma individualizada.",
+      secondaryDescription:
+        "Buscamos que cada persona y cada familia encuentre un espacio cómodo, cuidado y adaptado al trabajo que realizamos en las distintas áreas del centro.",
+    },
+    environment: {
+      title: "Un entorno para trabajar con tranquilidad",
+      paragraphs: [
+        "El espacio de Aprende está pensado para favorecer una atención individualizada y un trabajo tranquilo, tanto con niños y adolescentes como con personas adultas y familias.",
+        "La organización del centro busca que cada intervención pueda desarrollarse en un entorno cuidado y profesional, manteniendo una atención cercana y adaptada a las necesidades de cada persona.",
+      ],
+    },
+    location: {
+      title: "Dónde estamos",
+      description:
+        "Estamos en Priego de Córdoba. Puedes utilizar la dirección para localizarnos o escribirnos si necesitas resolver alguna duda antes de venir.",
+      mapsUrl: null,
+    },
+    contact: {
+      title: "¿Quieres contactar con nosotros?",
+      description:
+        "Si quieres resolver alguna duda o contarnos qué necesitas, puedes escribirnos directamente.",
+      primaryCTA: {
+        label: "Hablar por WhatsApp",
+        channel: "whatsapp",
+      },
+      secondaryCTA: {
+        label: "Escribir por email",
+        channel: "email",
+      },
+    },
+  },
   phone: "638 21 20 64",
   whatsapp: "+34 638 21 20 64",
   email: "clinicaneuroaprende@gmail.com",
