@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 
+import { centerSpaces } from "@/content/center";
 import { siteConfig } from "@/content/site";
 import { createMailtoHref, createWhatsAppHref } from "@/lib/contact";
 
@@ -63,6 +64,37 @@ export default function CentroPageRoute() {
               ))}
             </div>
           </section>
+        </div>
+      </section>
+
+      <section className="bg-white px-4 py-14 sm:px-6 sm:py-18 lg:px-8 lg:py-22" aria-labelledby="center-spaces-title">
+        <div className="mx-auto w-full max-w-7xl">
+          <div className="max-w-3xl">
+            <h2 id="center-spaces-title" className="text-3xl font-bold leading-tight text-[color:var(--color-ink)] sm:text-4xl">
+              Conoce nuestros espacios
+            </h2>
+            <p className="mt-5 text-base leading-8 text-[color:var(--color-muted)] sm:text-lg">
+              Te invitamos a recorrer el centro y conocer los espacios que forman parte de Aprende.
+            </p>
+          </div>
+
+          <div className="mt-12 space-y-16">
+            {centerSpaces.map((space) => (
+              <section key={space.title} aria-label={space.title}>
+                <h3 className="text-2xl font-bold leading-tight text-[color:var(--color-ink)]">{space.title}</h3>
+                <p className="mt-3 max-w-3xl text-base leading-8 text-[color:var(--color-muted)]">{space.description}</p>
+                <div className="mt-6 grid gap-x-5 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+                  {space.images.map((image) => (
+                    <figure key={image.src}>
+                      <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-[color:var(--color-surface)]">
+                        <Image src={image.src} alt={image.alt} fill sizes="(min-width: 1280px) 25rem, (min-width: 1024px) 31vw, (min-width: 640px) 46vw, 92vw" className="object-contain" />
+                      </div>
+                    </figure>
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
         </div>
       </section>
 

@@ -47,15 +47,15 @@ export const siteConfig = {
     images: [
       {
         id: "main",
-        src: "/images/center/centro-principal.jpeg",
-        alt: "Espacio principal del centro Aprende",
+        src: "/images/center/web/Recepción.jpeg",
+        alt: "Mostrador de recepción de Aprende",
         label: "Fotografía principal del centro",
         featured: true,
       },
       {
         id: "secondary",
-        src: "/images/center/centro-secundaria.jpeg",
-        alt: "Sala del centro Aprende",
+        src: "/images/center/web/Sala de espera.jpeg",
+        alt: "Sala de espera junto a la recepción de Aprende",
         label: "Fotografía secundaria del centro",
         featured: false,
       },
